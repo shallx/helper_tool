@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+
+    
+    
+    <title>Helper Site</title>
+</head>
+<body>
+    <div class="container">
+        <!-- bootstrap Email password form -->
+        <h1 class="h3 mb-3 font-weight-normal text-center mt-5">Create a remote origin add command</h1>
+            <label for="sshLink" class="sr-only">Enter ssh link</label>
+            <input type="text" id="sshLink" name="sshLink" class="form-control" placeholder="git@github.com:shallx/bmiCalculator.git" required autofocus>
+            <label for="username" class="sr-only mt-3">Enter github username</label>
+            <input type="username" id="username" name="username" class="form-control" placeholder="shallx" required>
+            <button class="btn btn-lg btn-primary btn-block mt-3" id="generateAddOriginCommand">Generate</button>
+            <button class="btn btn-lg btn-secondary btn-block mt-3 ms-1" id="clear">Clear</button>
+            <br>
+        
+        <!-- Output -->
+        <label for="sshLink" class="sr-only mt-4">Output</label>
+        <div class="d-flex">
+            <input type="output" id="output" name="output" class="flex-grow-1 form-control" placeholder="output">
+            <button class="btn btn-primary ms-1" id="copy">Copy</button>
+        </div>
+        <div id="snackbar">Success</div>
+        
+    </div>
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/script.js"></script>
+    <script src="../../js/github.js"></script>
+</body>
+</html>
