@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="icon" type="image/x-icon" href="../../images/fav.ico" type="image/x-icon">
+    <title>Helper Site</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- breadcrumb button -->
+        <div class="row mt-3">
+            <div class="col-12">
+                <a href="../../index.html" class="btn btn-primary">Back to Home</a>
+            </div>
+        </div>
+        <!-- bootstrap Email password form -->
+        <h1 class="h3 mb-3 font-weight-normal text-center mt-5">Firebase Options Object Generator</h1>
+        <label for="sshLink" class="sr-only">Enter GoogleServices.json object</label>
+        <textarea type="text" id="fire_json" name="fire_json" class="form-control"
+            placeholder="Json Object" required autofocus cols="10" rows="20"></textarea>
+        <button class="btn btn-lg btn-primary btn-block mt-3" id="generateFirebaseOptionsObject">Generate</button>
+        <button class="btn btn-lg btn-secondary btn-block mt-3 ms-1" id="clear">Clear</button>
+        <br>
+
+        <!-- Output -->
+        <label for="output" class="sr-only mt-4">Output</label>
+        <div class="d-flex">
+            <textarea type="output" 
+                    id="output" 
+                    name="output" 
+                    class="flex-grow-1 form-control"
+                    cols="10"
+                    rows="7"
+                placeholder="output"></textarea>
+        </div>
+        <button class="btn btn-primary ms-1" id="copy">Copy</button>
+        <div id="snackbar">Success</div>
+
+    </div>
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/script.js"></script>
+    <script src="../../js/firebase.js"></script>
+</body>
+
+</html>
